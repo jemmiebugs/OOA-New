@@ -1465,7 +1465,7 @@ section {
    filter: alpha(opacity=98);
  }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .modal-fullscreen{
     background: black;
   }
@@ -1479,7 +1479,7 @@ section {
   .modal-fullscreen{
     background: black;
    }
-}
+} */
 
 
  /* .modal-fullscreen size: we use Bootstrap media query breakpoints */
