@@ -1465,6 +1465,14 @@ section {
    filter: alpha(opacity=98);
  }
 
+ 
+ @media only screen and (max-width: 768px) {
+  .modal-fullscreen  {
+    background-color: black;
+  }
+}
+
+
 /* @media (min-width: 768px) {
   .modal-fullscreen{
     background: black;
