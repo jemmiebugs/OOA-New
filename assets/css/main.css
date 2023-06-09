@@ -367,37 +367,37 @@ fs--s.block_float_label {
 }
 
 textarea::-webkit-input-placeholder,input::-webkit-input-placeholder {
-  color: #000;
+  color: #ffff;
   opacity: 1;
   font-weight: normal
 }
 
 textarea::-moz-placeholder,input::-moz-placeholder {
-  color: #000;
+  color: #ffff;
   opacity: 1;
   font-weight: normal
 }
 
 textarea:-ms-input-placeholder,input:-ms-input-placeholder {
-  color: #000;
+  color: #ffff;
   opacity: 1;
   font-weight: normal
 }
 
 textarea:-moz-placeholder,input:-moz-placeholder {
-  color: #000;
+  color: #ffff;
   opacity: 1;
   font-weight: normal
 }
 
 textarea::-ms-input-placeholder,input::-ms-input-placeholder {
-  color: #000;
+  color: #ffff;
   opacity: 1;
   font-weight: normal
 }
 
 textarea::placeholder,input::placeholder {
-  color: #000;
+  color: #fff;
   opacity: 1;
   font-weight: normal
 }
@@ -435,7 +435,7 @@ textarea::placeholder,input::placeholder {
   display: none
 }
 
-mail {
+.mail {
   cursor: pointer
 }
 
@@ -501,7 +501,7 @@ mail {
   width: 100%;
   margin: 10px 0 10px 0;
   /* font-size: 21px; */
-  color: #000;
+  color: #ffff;
   /* border: 0 solid;
   border-bottom: 2px solid #000;
   background-color: transparent */
