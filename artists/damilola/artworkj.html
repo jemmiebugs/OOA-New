@@ -31,6 +31,7 @@
   <!-- Template Main CSS Files -->
   <link href="/assets/css/variables.css" rel="stylesheet">
   <link href="/assets/css/main.css" rel="stylesheet">
+  <link href="/assets/css/modal.css" rel="stylesheet">
 
 </head>
 
@@ -50,8 +51,8 @@
         <ul>
           <li><a href="/artist.html">Artist</a></li>
           <li><a href="/exhibitions.html">Exhibitions</a></li>
-          <li><a href="/about.html">About us</a></li>
           <li><a href="/news.html">News</a></li>
+          <li><a href="/about.html">About us</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
@@ -226,45 +227,73 @@
  <script>
    const myModalAlternative = new bootstrap.Modal('#myModal', options)
    </script>
-  
+
+
+<!-- Modal -->
+<div id="popup--mail" class="mail__popup tt-popup-email jsModalMail active ontop">
+  <div class="mail__inner">
+      <div id="mc_embed_signup" class="popup__signup">
+          <form action="https://galleryaffinity.us2.list-manage.com/subscribe/post?u=ec171e89a019ac5ae7ca27e83&amp;id=299f1b6c50&amp;f_id=00085ee0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailform" target="_blank" novalidate="">
+              <div>Join our mailing list for updates about our artists, exhibitions, events, and more.</div>
+              <input type="email" value="" autocomplete="off" placeholder="Enter email address" name="EMAIL" class="required email" id="mce-EMAIL">
+
+              <div class="contact__section--form_checkbox">
+                  <input type="checkbox" id="gdpr_13" name="gdpr[13]" value="Y" class="av-checkbox gdpr" checked="">
+                  <label for="mce-GDPR"> I agree</label>
+              </div>
+              
+              <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_51d9a79e08fd7f7dbb49c27a6_d763097230" tabindex="-1" value=""></div>
+              <div class="clear form-submit"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button form__button"></div>
+              <div class="tt-privacypolicy"> By sharing your email, you agree to our <em><a class="tt-privacy-policy-link" href="/privacy">Privacy Policy</a></em>.</div>
+              <a class="popup--exit jsCloseMail" onclick="">X</a>
+          </form>
+      </div>
+  </div>
+</div>
+
+
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
 <section>
-<footer id="footer" class="footer">
-  <div class="footer-legal">
-    <div class="container">
-
-      <div class="row justify-content-between">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <div class="copyright">
-            ©<strong><span>Respective Artist & Affinity</span></strong>. All Rights Reserved
-            <div>Sign up to <a href="#">Mailing List</a></div>
+  <footer id="footer" class="footer">
+    <div class="footer-legal">
+      <div class="container">
+  
+        <div class="row justify-content-between">
+          <div class="col-md-6  text-md-start mb-3 mb-md-0">
+            <div class="copyright">
+              ©<strong><span>Respective Artist & Affinity</span></strong>. All Rights Reserved
+              <div>Sign up to <a href="">Mailing List</a></div>
+            </div>
+  
+            <!-- <div class="credits">
+            Designed by <a href="#">Dream Savvy Solutions</a>
+            </div> -->
+  
           </div>
-
-          <!-- <div class="credits">
-          Designed by <a href="#">Dream Savvy Solutions</a>
-          </div> -->
-
-        </div>
-
-        <div class="col-md-6">
-          <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
-            <div style="margin-right: 13%;">follow us on</div>
-            <a href="https://twitter.com/GalleryAffinity" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="https://www.facebook.com/GalleryAffinity?_rdc=1&_rdr" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/galleryaffinity/" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F37194981%2F" class="linkedin"><i class="bi bi-linkedin"></i></a>
+  
+          <div class="col-md-6">
+            <div class="social-links mb-3 mb-lg-0 text-md-end">
+              <div style="margin-right: 15%;">follow us on</div>
+              <a href="https://twitter.com/GalleryAffinity" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/GalleryAffinity?_rdc=1&_rdr" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/galleryaffinity/" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F37194981%2F" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+  
           </div>
-
+  
         </div>
-
+  
       </div>
-
     </div>
-  </div>
-
-</footer>
+  
+  </footer>
 </section>
 
 
@@ -279,6 +308,7 @@
 
 <!-- Template Main JS File -->
 <script src="/assets/js/main.js"></script>
+<script src="/assets/js/modal.js"></script>
 <script src="/forms/enquiry.js"></script>
 
 </body>

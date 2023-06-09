@@ -254,6 +254,276 @@ section {
   }
 
 /*--------------------------------------------------------------
+# pop modal subscription 
+--------------------------------------------------------------*/
+#popup--mail.tt-popup-email {
+  width: auto;
+  height: auto;
+  width: calc(95%);
+  top: auto;
+  left: auto;
+  bottom: 2.5vw;
+  right: 2.5vw;
+  padding: 2rem 3rem 2rem 2rem;
+  max-width: 95vw;
+  border: 1px solid black;
+  background: rgba(255,255,255,0.95);
+  max-width: 580px;
+  overflow-y: auto
+}
+
+#popup--mail.tt-popup-email .mail__inner {
+  width: 100%;
+  cursor: auto
+}
+
+#popup--mail.tt-popup-email .popup__signup {
+  position: relative;
+  padding: 0
+}
+
+#popup--mail.tt-popup-email .popup__signup input {
+  border: 0 solid black;
+  border-bottom: 2px solid #000;
+  height: auto
+}
+
+#popup--mail.tt-popup-email form input[type="email"] {
+  font-size: 1.125rem;
+  padding: 0 0 .25rem 0 !important
+}
+
+#popup--mail.tt-popup-email form input[type="email"]::-webkit-input-placeholder {
+  padding: 0 0 .25rem 0 !important
+}
+
+#popup--mail.tt-popup-email form input[type="email"]::-moz-placeholder {
+  padding: 0 0 .25rem 0 !important
+}
+
+#popup--mail.tt-popup-email form input[type="email"]::-ms-input-placeholder {
+  padding: 0 0 .25rem 0 !important
+}
+
+#popup--mail.tt-popup-email form input[type="email"]::placeholder {
+  padding: 0 0 .25rem 0 !important
+}
+
+#popup--mail.tt-popup-email form>*:not(:last-child) {
+  margin-bottom: 1rem
+}
+
+#popup--mail.tt-popup-email #mc-embedded-subscribe {
+  font-style: normal !important;
+  border: 1px solid black !important;
+  display: block;
+  padding: .5rem 1.5rem;
+  font-size: 1.125rem
+}
+
+#popup--mail.tt-popup-email #mc-embedded-subscribe:hover,#popup--mail.tt-popup-email #mc-embedded-subscribe:focus {
+  text-decoration: none;
+  background-color: black;
+  color: white
+}
+
+#popup--mail.tt-popup-email .contact__section--form_checkbox {
+  visibility: hidden;
+  opacity: 0;
+  height: 0
+}
+
+#popup--mail.tt-popup-email .popup--exit {
+  font-family: sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(30px, -20px);
+  transform: translate(30px, -20px);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+
+#popup--mail.tt-popup-email .popup--exit:hover,#popup--mail.tt-popup-email .popup--exit:focus {
+  cursor: pointer;
+  color: lightgrey
+}
+
+.tt-privacy-policy-link:hover,.tt-privacy-policy-link:focus {
+  text-decoration: underline
+}
+
+@media only screen and (max-width: 500px) {
+  #popup--mail.tt-popup-email .popup__signup input {
+      font-size:1rem !important
+  }
+
+  #popup--mail.tt-popup-email .popup--exit {
+      padding: 5px
+  }
+}
+fs--s.block_float_label {
+  display: none
+}
+
+textarea::-webkit-input-placeholder,input::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: normal
+}
+
+textarea::-moz-placeholder,input::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: normal
+}
+
+textarea:-ms-input-placeholder,input:-ms-input-placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: normal
+}
+
+textarea:-moz-placeholder,input:-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: normal
+}
+
+textarea::-ms-input-placeholder,input::-ms-input-placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: normal
+}
+
+textarea::placeholder,input::placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: normal
+}
+.snap_wrap {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(0);
+  height: 100vh;
+  width: 100vw
+}
+
+.mail__popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  background: rgba(255,255,255,0.95);
+  -webkit-transition: .25s ease opacity,0s linear visibility;
+  transition: .25s ease opacity,0s linear visibility
+}
+
+.mail__popup.active {
+  opacity: 1
+}
+
+.mail__popup.ontop {
+  z-index: 99
+}
+
+.mail__inner {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: -1;
+  background: none;
+  cursor: pointer
+}
+
+.mail__headline {
+  width: 50%;
+  position: fixed;
+  top: 0;
+  left: 25%;
+  text-align: center;
+  padding: 8px 0 0 0
+}
+
+.popup__signup,.popup__enquireroom {
+  width: 70vw;
+  max-width: 920px;
+  height: auto
+}
+
+.popup__signup textarea,.popup__enquireroom textarea,.popup__signup input,.popup__enquireroom input {
+  line-height: normal;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  /* font-size: 21px; */
+  color: #000;
+  /* border: 0 solid;
+  border-bottom: 2px solid #000;
+  background-color: transparent */
+}
+
+#popup--pricing.success form,#popup--enquireroom.success form {
+  display: none
+}
+
+#popup--pricing.success .popup__success,#popup--enquireroom.success .popup__success {
+  display: block
+}
+
+.popup__success {
+  display: none;
+  text-align: center;
+  font-size: 21px;
+}
+
+#mc_embed_signup_2 {
+  width: 100%;
+  height: auto;
+  padding: 0 0 20px 0
+}
+
+#mc_embed_signup_2 input {
+  width: 100%;
+  margin: 20px 0 0 0;
+  display: block;
+  font-size: 21px;
+  color: #000;
+  border: 0;
+  border-bottom: 2px solid #000
+}
+
+#mc-embedded-subscribe,#pricingform__submit,#privateroomform__submit,#accessroomform__submit,#enquireroomform__submit {
+  background: transparent;
+  border: 0 !important;
+  text-align: left;
+  font-style: italic;
+  padding: 0
+}
+
+#mc-embedded-subscribe_2 {
+  background: transparent;
+  border: 0 !important;
+  text-align: left;
+  padding: 0 0 20px 0;
+  font-style: italic;
+  padding: 0
+}
+/*--------------------------------------------------------------
 # Desktop Navigation 
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
