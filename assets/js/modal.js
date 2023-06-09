@@ -18105,13 +18105,13 @@ $(document).ready(function(){
 			removeBinding();
 		});
 
-		// let closeModalBtn = document.querySelector(".jsCloseMail")			
-		// if(closeModalBtn) {
-		// 	closeModalBtn.addEventListener('click', () => {
-		// 		console.log("clicked close btn")
-		// 		localStorage.setItem("popup", "closed")
-		// 	})
-		// };			
+		let closeModalBtn = document.querySelector(".jsCloseMail")			
+		if(closeModalBtn) {
+			closeModalBtn.addEventListener('click', () => {
+				console.log("clicked close btn")
+				localStorage.setItem("popup", "closed")
+			})
+		};			
 		
 		let getPopup = document.querySelector(".jsModalMail")
 

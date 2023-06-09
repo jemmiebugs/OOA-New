@@ -409,6 +409,36 @@ textarea::placeholder,input::placeholder {
   width: 100vw
 }
 
+.foot--block {
+  padding: 2em 1em;
+  text-align: left;
+  line-height: 1.8em;
+  height: auto;
+  background-color: #d3d3d3;
+  margin-top: 2em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column
+}
+
+.content-block {
+  position: relative;
+  overflow: hidden
+}
+
+.foothome {
+  display: none
+}
+
+mail {
+  cursor: pointer
+}
+
 .mail__popup {
   width: 100vw;
   height: 100vh;
@@ -476,6 +506,15 @@ textarea::placeholder,input::placeholder {
   border-bottom: 2px solid #000;
   background-color: transparent */
 }
+
+.nobr {
+  white-space: nowrap
+}
+
+.nobr_2 {
+  white-space: nowrap
+}
+
 
 #popup--pricing.success form,#popup--enquireroom.success form {
   display: none
